@@ -16,3 +16,4 @@ npx create-react-native-app -t with-router
 
 # Steps taken to create the app
 -> create the app folder and in it create - index.js and _layout.js
+-> installing expo-font axios and react-native-dotenv
