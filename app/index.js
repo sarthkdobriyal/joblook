@@ -1,12 +1,23 @@
 import { View, ScrollView, SafeAreaView, Text } from "react-native";
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 import { Stack, useRouter} from 'expo-router';
 import { COLORS  , icons , images, SIZES} from '../constants';
 import { Nearbyjobs, Popularjobs, Welcome, ScreenHeaderBtn} from "../components"
 
 const Home = () => {
     const router = useRouter();
+    const [searchTerm, setSearchTerm] = useState("");
 
+    const [getJobs, setGetJobs] = useState(false);
+
+    //API was allowing 
+    useEffect(() => {
+        setGetJobs(false);
+
+        setTimeout(() => {
+            setGetJobs(true);
+        }, 2000)
+    }, [])
 
 
   return (
@@ -41,7 +52,7 @@ const Home = () => {
                       }
                     }}
                 />
-                {/* <Popularjobs /> */}
+                {getJobs && <Popularjobs />}
                 <Nearbyjobs />
             </View>
 

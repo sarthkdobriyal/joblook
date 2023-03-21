@@ -23,6 +23,9 @@ const styles = StyleSheet.create({
   },
   cardsContainer: {
     marginTop: SIZES.medium,
+    display:"flex",
+    flexDirection:"column",
+    alignItems:"center"
   },
 });
 
