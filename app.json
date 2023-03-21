@@ -5,6 +5,23 @@
       "bundler": "metro"
     },
     "name": "Jobit",
-    "slug": "Jobit"
+    "slug": "Jobit",
+    "extra": {
+      "eas": {
+        "projectId": "82ebd446-6f7b-46d6-b158-02f202ea8853"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/82ebd446-6f7b-46d6-b158-02f202ea8853"
+    },
+    "android": {
+      "package": "com.highprog.Jobit"
+    },
+    "ios": {
+      "bundleIdentifier": "com.highprog.Jobit"
+    }
   }
 }
